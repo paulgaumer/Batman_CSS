@@ -1,0 +1,124 @@
+.face {
+	position: relative;
+	left: 200px;
+	top: 100px;
+}
+
+.antena {
+	height: 0;
+	width: 110px;
+	border-top: 40px solid transparent;
+	border-left: 20px solid black;
+	border-right: 20px solid black;
+	position: relative;
+	left:70px;
+}
+
+
+@keyframes blink {
+	50% {
+		background: radial-gradient(ellipse, blue 15%, transparent 40%), black;
+		background-size: 50% 100%;
+	}
+}
+
+@-webkit-keyframes blink {
+	50% {
+		background: -webkit-radial-gradient(ellipse, blue 15%, transparent 40%), black;
+		background-size: 50% 100%;
+	}
+}
+
+@-moz-keyframes blink {
+	50% {
+		background: -moz-radial-gradient(ellipse, blue 15%, transparent 40%), black;
+		background-size: 50% 100%;
+	}
+}
+
+.laser {
+	animation: blink 1.5s infinite;
+	-webkit-animation: blink 1.5s infinite;
+	-moz-animation: blink 1.5s infinite;
+}
+
+.eyes {
+	background: radial-gradient(ellipse, white 15%, transparent 40%), black;
+  	background: -webkit-radial-gradient(ellipse, white 15%, transparent 40%), black;
+  	background: -moz-radial-gradient(ellipse, white 15%, transparent 40%), black;
+	background-size: 50% 100%; 
+	height: 50px;
+  	width: 150px; 
+  	position: relative;
+  	left: 70px;
+}
+
+.nose {
+	position: absolute;
+	left: 125px;
+	border-top: 20px solid black;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	width: 1px;
+	z-index: 1;
+}
+
+.mouth {
+	height: 80px;
+	width: 110px;
+	position: relative;
+	left: 70px;
+	border-left: 20px solid black;
+	border-right: 20px solid black;
+	border-bottom: 5px solid black;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #eebb99;
+}
+
+.teeth {
+	position: absolute;
+	z-index: 1;
+	height: 6px;
+	width: 50px;
+	background-color: black;
+	left: 120px;
+	top: 140px;
+}
+
+.message {
+	position: absolute;
+	top: 100px;
+	left: 490px;
+	border: 2px solid red;
+	border-radius: 25px;
+	padding: 30px;
+	display: inline-block;
+	font-size: 50px;
+	font-family: 'bangers';
+}
+
+.buble_one {
+	position: absolute;
+	top: 210px;
+	left: 460px;
+	border: 2px solid red;
+	border-radius: 25px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.buble_two {
+	position: absolute;
+	top: 230px;
+	left: 430px;
+	border: 2px solid red;
+	border-radius: 25px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.flash {
+	position: relative;
+	left: 295px;
+	top: 120px;
+}
